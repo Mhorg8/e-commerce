@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .logo {
+    @apply font-bold leading-none;
+  }
+  .nav-item {
+    @apply uppercase font-semibold hover:underline hover:text-softGreen 
+    transition-all duration-300;
+  }
+  .primary-button {
+    @apply px-1 rounded-full h-[40px] w-[180px] text-sm flex items-center justify-between hover:bg-gray transition-all duration-300;
+  }
+  .circle-button {
+    @apply absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 text-white
+    text-sm font-semibold bg-gray rounded-full w-[90px] p-1 h-[90px] bg-opacity-30 hover:bg-opacity-50 transition duration-200;
+  }
+  .filter-option {
+    @apply px-2 md:px-4 py-1 text-base font-bold text-black border border-b-gray border-t-black border-e-gray
+    hover:bg-black hover:text-white rounded-full transition-all duration-200 cursor-pointer shadow-md;
+  }
+  .input {
+    @apply bg-white px-4 py-2 rounded-xl focus:outline outline-black text-[15px] w-full;
+  }
+  .alert {
+    @apply flex w-full max-w-[400px] items-center  justify-evenly
+    bg-black absolute top-0 left-1/2 -translate-x-1/2 z-50 py-2 rounded-xl;
+  }
+
+  .footer-heading {
+    @apply font-medium text-2xl mb-4;
+  }
+
+  .footer-link {
+    @apply hover:text-softGreen hover:scale-110 transition-all duration-200 text-lg;
+  }
+  .dropdown-item {
+    @apply flex items-center justify-between hover:bg-softGreen hover:text-white transition-all duration-200 rounded-t-xl px-3 py-2;
+  }
+  .return-back-btn {
+    @apply bg-black text-white rounded-xl w-[300px] py-4 hover:bg-white hover:text-black border-2 hover:border-black 
+    transition-all duration-300;
+  }
+  .cart-item-title {
+    @apply text-base font-semibold text-neutral-800;
+  }
+  .cart-item-detail {
+    @apply text-lg font-bold text-neutral-800;
+  }
+  .undoButton {
+    @apply w-8 h-8 rounded-full absolute top-5 right-5 bg-transparent hover:bg-neutral-300 bg-neutral-200 text-black flex items-center justify-center;
+  }
+  .pagination-btn {
+    @apply bg-black text-white px-6 py-2 rounded-xl cursor-pointer capitalize
+    hover:bg-softGreen transition duration-200;
+  }
+  .pagination-number {
+    @apply px-4 py-2 bg-white border border-t-black border-s-black border-b-gray border-e-gray rounded-lg
+    hover:bg-softGreen hover:text-white;
+  }
+  .featuersBox {
+    @apply w-[250px] shadow-md h-[250px] rounded-xl border-2 border-white
+    text-white flex items-center justify-center flex-col p-3 text-center cursor-pointer;
+  }
+  .contact-title {
+    @apply text-lg md:text-2xl font-semibold text-neutral-500;
+  }
+  .contact-text {
+    @apply text-base text-neutral-800 ;
+  }
+  .contact-container {
+    @apply col-span-6 md:col-span-4 bg-neutral-100 rounded-xl shadow-md hover:bg-neutral-300 hover:scale-105
+    py-4 px-2 transition-all duration-200 cursor-pointer;
+  }
+}
