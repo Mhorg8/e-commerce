@@ -8,7 +8,7 @@ interface props {
 const NavItem = ({ item, customStyle }: props) => {
   return (
     <div>
-      <Link className={`nav-item ${customStyle}`} href={item.path}>
+      <Link prefetch className={`nav-item ${customStyle}`} href={item.path}>
         {item.name}
       </Link>
     </div>

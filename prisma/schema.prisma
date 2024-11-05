@@ -46,7 +46,7 @@ model Product {
   desc        String    
   stock       Int
   image       String
-  quantity    Int
+  quantity    Int?
   color       String[]
   selectedColor String?
   category    String[]
